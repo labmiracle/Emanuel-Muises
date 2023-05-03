@@ -1,14 +1,10 @@
 function onlyUniques(...args) {
+    
+    let conjunto = new Set(arr);
 
-    let result = [];
+    let unicos = [...conjunto];
 
-    for (let obj of arr) {
-        if (!result.includes(obj)) {
-            result.push(obj);
-        }
-    }
-
-    return result;
+    return unicos;
 }
 
 let arr = [1,2,3,4,5,4,6,2,3,1,10];
